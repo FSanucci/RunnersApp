@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/current_plan"
+            android:icon="@drawable/ic_menu_current_plan"
+            android:title="@string/current_plan" />
+
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/ic_menu_notifications"
+            android:title="@string/notifications"
+            app:actionLayout="@layout/menu_badge"/>
+<!--
+        <item
+            android:id="@+id/coach_comments"
+            android:icon="@drawable/ic_menu_professional_notes"
+            android:title="@string/coach_comment" />
+-->
+        <item
+            android:id="@+id/professional_notes"
+            android:icon="@drawable/ic_menu_professional_notes"
+            android:title="@string/professional_notes" />
+<!--
+        <item
+            android:id="@+id/personal_info"
+            android:icon="@drawable/ic_menu_personal_info"
+            android:title="@string/personal_info" />
+-->
+        <item
+            android:id="@+id/community"
+            android:icon="@drawable/ic_menu_professional_notes"
+            android:title="@string/cartelera" />
+
+        <item
+            android:id="@+id/personal_info"
+            android:icon="@drawable/ic_menu_professional_notes"
+            android:title="@string/chat" />
+
+        <item
+            android:id="@+id/user_history"
+            android:icon="@drawable/ic_menu_user_history"
+            android:title="@string/user_history" />
+
+        <item
+            android:id="@+id/racing"
+            android:icon="@drawable/ic_menu_racing"
+            android:title="@string/racing" />
+
+        <item
+            android:id="@+id/payments"
+            android:icon="@drawable/ic_menu_paymens"
+            android:title="@string/payments" />
+
+        <item
+            android:id="@+id/statistics"
+            android:icon="@drawable/ic_menu_statistics"
+            android:title="@string/statistics" />
+
+        <item
+            android:id="@+id/fb_login"
+            android:icon="@drawable/ic_facebook"
+            android:checkableBehavior="none"
+            android:title="@string/fb_login"
+            android:visible="false"/>
+        <item
+            android:id="@+id/fb_logout"
+            android:icon="@drawable/ic_facebook"
+            android:title="@string/fb_logout"
+            android:checkableBehavior="none"
+            android:visible="false"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:checkableBehavior="none"
+                android:title="@string/logout" />
+    </group>
+
+</menu>

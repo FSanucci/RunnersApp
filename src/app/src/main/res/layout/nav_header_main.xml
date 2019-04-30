@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorBackground"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/nav_logo_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/status_bar_height"
+        fresco:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nav_logo"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/status_bar_height"
+        fresco:scaleType="fitXY"
+        android:src="@drawable/logo"
+        fresco:actualImageScaleType="fitXY"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

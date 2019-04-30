@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    tools:context="com.app.runners.fragment.DaysFragment">
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_half_margin"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/title1"
+            style="@style/TrainingSectionTitle"
+            android:textColor="?colorDefaultPrimary"
+            android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+            android:text="DIA 1 Lunes" />
+
+        <TextView
+            android:id="@+id/body1"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorDividers">
+        </LinearLayout>
+
+        <TextView
+            style="@style/TrainingSectionSubtitle"
+            android:text="@string/training_plan_vol" />
+
+        <TextView
+            android:id="@+id/km1"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp"
+            android:text="2.5km" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorDividers">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray">
+            <TextView
+                android:id="@+id/comment_title"
+                style="@style/TrainingSectionSubtitle"
+                android:text="@string/comment_plan"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/comment_buttom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorAccent"
+                android:paddingTop="4dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:background="@color/colorLightGray"
+            android:id="@+id/comment1"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/title2"
+            style="@style/TrainingSectionTitle"
+            android:textColor="?colorDefaultPrimary"
+            android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+            android:text="DIA 1 Lunes" />
+
+        <TextView
+            android:id="@+id/body2"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorDividers">
+        </LinearLayout>
+
+        <TextView
+            style="@style/TrainingSectionSubtitle"
+            android:text="@string/training_plan_vol" />
+
+        <TextView
+            android:id="@+id/km2"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp"
+            android:text="2.5km" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorDividers">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray">
+            <TextView
+                style="@style/TrainingSectionSubtitle"
+                android:text="@string/comment_plan"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/comment_buttom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorAccent"
+                android:paddingTop="4dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:background="@color/colorLightGray"
+            android:id="@+id/comment2"
+            style="@style/TrainingSectionBody"
+            android:layout_marginTop="4dp"
+            android:text="" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_row_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorLightGray"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Separador(data)"
+            android:background="@drawable/item_statistic_border"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_row_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@id/item_row_space">
+
+        <LinearLayout
+            android:id="@+id/container_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/item_statistic_border">
+
+            <TextView
+                android:id="@+id/activity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="1dp"
+                android:text="NombreCarreraCon 2 lineas"/>
+
+            <TextView
+                android:id="@+id/activity_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Distancia (Km)"/>
+
+            <TextView
+                android:id="@+id/activity_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:paddingBottom="3dp"
+                android:text="Fecha"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_duration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/item_statistic_border">
+
+            <TextView
+                android:id="@+id/duration_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="TiempoTotal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_speed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/item_statistic_border">
+
+            <TextView
+                android:id="@+id/speed_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="Velocidad"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

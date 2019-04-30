@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "357471867051",
+    "firebase_url": "https://runnersapp-d16cf.firebaseio.com",
+    "project_id": "runnersapp-d16cf",
+    "storage_bucket": "runnersapp-d16cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357471867051:android:e6dfb5a6d29e4527",
+        "android_client_info": {
+          "package_name": "com.app.runners"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357471867051-bmpgj8dpa19c7694u8tgamrmg5hi8nao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.runners",
+            "certificate_hash": "b187d78e19cde4b8410d8c3de6bcae755b99390e"
+          }
+        },
+        {
+          "client_id": "357471867051-06idpqcdb6k5gah9i9oafnbkvpa9s8am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVrHjuL_h4kWrwU7O3oJI-CSrMW9PD1zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357471867051-06idpqcdb6k5gah9i9oafnbkvpa9s8am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

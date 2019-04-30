@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@style/ScrollAppearence">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@color/colorWhite"
+                android:elevation="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient">
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/HeaderTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:text="@string/racing_add_title" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/race_desc_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/header"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/race_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racing_text"
+                        android:paddingBottom="15dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/racing_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColorHint="@color/colorDisabledText"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+
+                        <EditText
+                            android:id="@+id/racing_input"
+                            style="@style/TextAppearence.EditText"
+                            android:inputType="textMultiLine"
+                            android:maxLength="400" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/desc_container_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/race_desc_container"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/race_km"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racing_km_text"
+                        android:paddingBottom="15dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/racingkm_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColorHint="@color/colorDisabledText"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+                        <EditText
+                            android:id="@+id/racingkm_input"
+                            style="@style/TextAppearence.EditText"
+                            android:inputType="number"
+                            android:maxLength="400" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/desc_container_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/desc_container_km"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/race_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racing_date_text"
+                        android:paddingBottom="15dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/racingdate_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColorHint="@color/colorDisabledText"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+
+                        <EditText
+                            android:id="@+id/racingdate_input"
+                            style="@style/TextAppearence.EditText"
+                            android:inputType="date"
+                            android:maxLength="400"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/desc_container_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/desc_container_date"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/race_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/racing_duration_text"
+                        android:paddingBottom="15dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/racingdduration_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColorHint="@color/colorDisabledText"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                        <EditText
+                            android:id="@+id/racingduration_input"
+                            style="@style/TextAppearence.EditText"
+                            android:inputType="number"
+                            android:maxLength="400"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/send_button"
+                    style="@style/Button"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/desc_container_duration"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/option_send" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/footer"
+                layout="@layout/copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+
+            <include
+                layout="@layout/item_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content"
+                android:layout_above="@id/footer"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/activity_horizontal_half_margin"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+            android:textAppearance="@style/ListDate"
+            android:layout_below="@+id/box"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="25-12-1983"/>
+
+        <LinearLayout
+            android:id="@+id/extra_margin"
+            android:layout_below="@+id/date"
+            android:visibility="gone"
+            android:layout_width="1dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_below="@+id/extra_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/ListTitle"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="XXX"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            android:textAppearance="@style/ListSubtitle" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="showImage"/>
+
+</RelativeLayout>
